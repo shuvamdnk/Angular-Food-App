@@ -1,0 +1,20 @@
+<div class="container">
+    <br>
+    <br>
+    <h4 class="text-dark">Foods</h4>
+    <div class="row">
+        <div class="col-md-3" *ngFor="let food of foods.data">
+            <div class="card shadow-sm">
+                <img src="{{ food.image }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{ food.food_name }}</h5>
+                  <p class="card-text">₹ {{food.price}}</p>
+                 
+                </div>
+                <div class="d-grid gap-2 p-3">
+                    <a [routerLink]="['/food-details/'+food.id]" class="btn btn-success shadow-sm">View Dwtails</a>
+                  </div>
+              </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="row m-0">
+    <div class="col-md-8 offset-md-2">
+      <form id="location_search_form">
+        <h1 class="text-light" align="center" >Discover the best food & drinks here</h1>
+        <div class="form-floating mb-1 shadow">
+          <input type="search" class="form-control shadow-sm" id="floatingInput" placeholder="London, UK">
+          <label for="floatingInput">Search Location</label>
+        </div>
+      </form>
+    </div>
+
+  <div class="container">
+    <div class="row">
+      <h4 class="text-light">Cities</h4>
+      <div class="col-md-4" *ngFor="let city of cities.data">
+        <a [routerLink]="['/location/'+city.id]" id="cityLink">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">{{city.name}}</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+#location_search_form {
+  margin-top: 5%;
+}
+
+#location_search_form .form-floating .form-control {
+  border: none;
+  outline: none;
+  background-color: rgb(233, 233, 233);
+}
+
+
+.container-fluid {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  background-position: center;
+  height: 100%;
+  padding: 0;
+}
+
+.container-fluid .row #cityLink{
+  text-decoration: none;
+  font-weight: bold;
+}

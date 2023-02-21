@@ -1,0 +1,26 @@
+.navbar {
+  background-color: antiquewhite;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)); */
+}
+/* .navbar .navbar-toggler {
+  border: none;
+  outline: none;
+}
+.navbar .container-fluid .navbar-nav .nav-link {
+  color: antiquewhite;
+  font-weight: bold;
+} */
+
+.modal .modal-header,
+.modal-footer {
+  border: none;
+  outline: none;
+}
+
+.modal .modal-header{
+  background-color: rgb(215, 242, 250);
+}
+
+.modal .modal-body .row .col-md-12 mat-form-field {
+  width: 100%;
+}

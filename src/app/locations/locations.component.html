@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row pt-5">
+        <h4 class="text-dark">Locations</h4>
+        <div class="col-md-4" *ngFor="let loc of location.data">
+          <a [routerLink]="['/restaurant/'+loc.id]" id="cityLink">
+            <div class="card mb-3 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">{{loc.location_name}}</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+    </div>
+</div>

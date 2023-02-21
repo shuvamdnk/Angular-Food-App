@@ -1,0 +1,106 @@
+
+
+<div class="container mt-5 mb-5">
+  <div class="row d-flex justify-content-center">
+      <div class="col-md-10">
+          <div class="card">
+              <div class="row">
+                  <div class="col-md-6">
+                    <br><br>
+                      <div class="images">
+                          <div class="text-center"> <img id="main-image" src="{{foodDetails.data.image}}"  /> </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="product p-4">
+                          <div class="d-flex justify-content-between align-items-center">
+                              <div class="d-flex align-items-center"> <i class="fa fa-long-arrow-left"></i> <a href="#"><span class="ml-1">Back</span></a> </div> <i class="fa fa-shopping-cart text-muted"></i>
+                          </div>
+                          <div class="mt-4 mb-3">
+                              <h5 class="text-uppercase">{{foodDetails.data.food_name}}</h5>
+                              <div class="price d-flex flex-row align-items-center">
+                                  <h4>Rs {{foodDetails.data.price}}</h4>
+                              </div>
+                          </div>
+                          <p class="about">{{foodDetails.data.description}}</p>
+                          <div class="cart mt-4 align-items-center"> <button class="btn btn-success text-uppercase mr-2 px-4">Order Now</button> <i class="fa fa-heart text-muted"></i> <i class="fa fa-share-alt text-muted"></i> </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<hr style="border:3px solid #f1f1f1">
+
+<div>
+  <br><br>
+  <div class="w3-center">
+    <h3>Review & Ratings</h3>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  </div>
+
+
+
+ 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <form action="">
+          <div class="col-md-4">
+            <span class="star-rating">
+              <input type="radio" id="stars" name="rating" value="1"><i></i>
+              <input type="radio" id="stars" name="rating" value="2"><i></i>
+              <input type="radio" id="stars" name="rating" value="3"><i></i>
+              <input type="radio" id="stars" name="rating" value="4"><i></i>
+              <input type="radio" id="stars" name="rating" value="5"><i></i>
+            </span>
+          </div>
+          <div class="w3-center">
+            <input type="hidden" value="0" class="choice" name="rating">
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Writs a Review</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+           <button class="center" mat-raised-button color="primary">Submit Review</button>
+           <br><br><br>
+        </div>
+        </form>
+      </div>
+   
+    </div>
+  </div>
+  
+  
+</div>
+
+
+
+<script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+ 
+    <script id="rendered-js" >
+      $('#stars').change(
+      function () {
+        alert("change")
+        $('.choice').val(this.value);
+      });
+//# sourceURL=pen.js
+    </script>
